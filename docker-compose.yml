@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  consul:
+    build: ./consul
+    network_mode: bridge
+    ports:
+      - 8500:8500
