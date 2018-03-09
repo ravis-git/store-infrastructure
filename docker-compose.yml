@@ -6,3 +6,11 @@ services:
     network_mode: bridge
     ports:
       - 8500:8500
+  etcd:
+    build: ./etcd
+    network_mode: bridge
+    ports:
+      - 2379:2379
+      - 2380:2380
+      - 4001:4001
+      - 7001:7001
